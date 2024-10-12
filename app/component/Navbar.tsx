@@ -7,7 +7,7 @@ import { HamburgerMenuIcon } from "@radix-ui/react-icons";
 import { useState, useEffect } from "react";
 import { X } from "lucide-react";
 import Image from "next/image";
-import Logo from "@/public/logo.png";
+import Logo2 from "@/public/logo2.png";
 
 const navLinks = [
   { name: "Home", href: "/" },
@@ -34,11 +34,11 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="px-4 lg:container lg:max-w-screen-2xl lg:mx-auto lg:text-2xl flex items-center lg:sticky lg:top-0 lg:backdrop-blur-lg lg:z-50 lg:justify-between py-3 border-b border-zinc-700">
+      <nav className="px-4 lg:container lg:max-w-screen-2xl lg:mx-auto lg:text-2xl flex items-center lg:sticky lg:top-0 lg:backdrop-blur-lg lg:z-50 lg:justify-between py-1 border-b border-zinc-700">
         {/* logo */}
         <Link href={"/"}>
           <Image
-            src={Logo}
+            src={Logo2}
             alt="Massive-Barbecue_logo"
             height={60}
             width={60}
@@ -82,7 +82,7 @@ export default function Navbar() {
             {isOpen ? (
               <X className="h-8 w-10 text-[#D84215] hover:text-[#D84215]" />
             ) : (
-              <HamburgerMenuIcon className="w-10 h-9 text-[#FED54F] lg:hidden" />
+              <HamburgerMenuIcon className="w-10 h-9 text-[#5D4037] lg:hidden" />
             )}
           </button>
         </div>
