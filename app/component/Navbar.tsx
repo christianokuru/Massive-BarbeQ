@@ -34,16 +34,20 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="px-4 lg:container lg:max-w-screen-2xl lg:mx-auto lg:text-2xl flex items-center lg:sticky lg:top-0 lg:backdrop-blur-lg lg:z-50 lg:justify-between py-1 border-b border-zinc-700">
+      <nav className="px-4 lg:container lg:max-w-screen-2xl lg:mx-auto lg:text-2xl flex items-center lg:sticky lg:top-0 lg:backdrop-blur-lg lg:z-50 lg:justify-between py-1 border-b border-zinc-300">
         {/* logo */}
-        <Link href={"/"}>
+          <div className="flex items-center space-x-2">
+          <Link href={"/"} >
           <Image
             src={Logo2}
             alt="Massive-Barbecue_logo"
-            height={60}
-            width={60}
+            height={90}
+            width={90}
+            className="flex space-2"
           />
         </Link>
+        <h1 className="font-sans font-bold text-xl text-[#5D4037]">Massive Barbeque</h1>
+          </div>
         {/* nav links */}
         <div className="hidden lg:flex lg:gap-x-10 lg:text-base lg:text-gray-600 lg:items-center">
           {navLinks.map((link, index) => (
