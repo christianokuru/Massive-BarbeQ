@@ -9,13 +9,21 @@ import {
 import Image from "next/image";
 import Products from "@/app/component/MenuPics";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export default function Menu() {
   return (
     <div className="container mx-auto px-4">
-      <h1 className="text-center scroll-m-20 text-4xl font-bold tracking-tight lg:text-5xl mb-[15px]  pt-7">Our Menu</h1>
-      <p className="leading-7 [&:not(:first-child)] text-center text-xs mt-[-20px] mb-2 ">MASSIVE BARBEQUE</p>
-      <p className="leading-7 [&:not(:first-child)]:mt-0 text-center text-gray-700 pb-3">Experience the warmth of our BBQ kitchen, where every dish is made with care and devotion. Browse our menu and find your new favorite!</p>
+      <h1 className="text-center scroll-m-20 text-4xl font-bold tracking-tight lg:text-5xl mb-[15px]  pt-7">
+        Our Menu
+      </h1>
+      <p className="leading-7 [&:not(:first-child)] text-center text-xs mt-[-20px] mb-2 text-[#D84315]">
+        MASSIVE BARBEQUE
+      </p>
+      <p className="leading-7 [&:not(:first-child)]:mt-0 text-center text-gray-700 pb-3">
+        Experience the warmth of our BBQ kitchen, where every dish is made with
+        care and devotion. Browse our menu and find your new favorite!
+      </p>
       <Carousel className="w-full max-w-5xl mx-auto">
         <CarouselContent>
           {Products.map((product, index) => (
@@ -62,7 +70,14 @@ export default function Menu() {
                       </div>
                     </div>
                     <div className="mt-auto pt-4">
-                      <Button className="w-full bg-[#212121] text-white font-semibold" variant={"default"}>Order Now</Button>
+                      <Link href={"https://wa.me/09059952426"}>
+                        <Button
+                          className="w-full bg-[#212121] text-white font-semibold"
+                          variant={"link"}
+                        >
+                          Order Now
+                        </Button>
+                      </Link>
                     </div>
                   </CardContent>
                 </Card>
