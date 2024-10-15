@@ -69,7 +69,7 @@ const Products = [
       price2: '₦1,000',
       prop3: 'Potato Chips', 
       price3: '₦700',
-      prop4: 'Coslaw',
+      prop4: 'Coleslaw',
       price4: '₦700',
       name: "Sides",
     }
