@@ -13,7 +13,8 @@ import Link from "next/link";
 
 export default function Menu() {
   return (
-    <div className="container mx-auto px-4">
+    // the arrow thing
+    <div className="container mx-auto px-12"> 
       <h1 className="text-center scroll-m-20 text-4xl font-bold tracking-tight lg:text-5xl mb-[15px]  pt-7">
         Our Menu
       </h1>
@@ -29,7 +30,7 @@ export default function Menu() {
           {Products.map((product, index) => (
             <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
               <div className="pt-[115px] h-full">
-                <Card className="relative bg-[#D84315] text-white h-full pt-16 flex flex-col">
+                <Card className="relative bg-[#D84315] text-white h-full pt-16 flex flex-col px-4">
                   <div className="absolute top-2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-60 h-60 rounded-full bg-[#FFD54F] p-1">
                     <div className="w-full h-full rounded-full overflow-hidden">
                       <Image
