@@ -71,7 +71,7 @@ export default function Menu() {
                       </div>
                     </div>
                     <div className="mt-auto pt-4">
-                      <Link href={"https://wa.me/08102569891"} target="_blank" rel="noopener noreferrer">
+                      <Link href={"https://wa.me/+2348102569891"} target="_blank" rel="noopener noreferrer">
                         <Button
                           className="w-full bg-[#212121] text-white font-semibold"
                           variant={"link"}

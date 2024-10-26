@@ -20,7 +20,7 @@ export default function CTA() {
             size="lg"
             className="bg-white text-red-700 hover:bg-orange-100 hover:text-red-800 transition-colors duration-300"
           >
-            <Link href="https://wa.me/08102569891" target="_blank" rel="noopener noreferrer">
+            <Link href="https://wa.me/+2348102569891" target="_blank" rel="noopener noreferrer">
               Order Now!
             </Link>
           </Button>
